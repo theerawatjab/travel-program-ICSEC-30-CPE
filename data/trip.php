@@ -24,7 +24,7 @@ return [
         'th' => 'หัวหิน – สามร้อยยอด 1 วัน',
     ],
     'tagline' => [
-        'en' => 'A royal pavilion inside a cave, lunch on a fishing beach, and a slow boat through the lotus marsh under limestone peaks. We pick you up from your Hua Hin hotel at 8am and have you back by 6pm.',
+        'en' => 'A royal pavilion inside a cave, lunch on a fishing beach, and a slow boat through the lotus marsh under limestone peaks. We pick you up from your Hua Hin hotel at 8am and take you back at 6pm.',
         'th' => 'ถ้ำพระยานคร ทะเลบางปู และล่องเรือชมบึงบัวกลางเทือกเขาหินปูน เที่ยวครบในวันเดียว พร้อมรถรับ-ส่งถึงโรงแรมในหัวหิน',
     ],
 
@@ -40,29 +40,8 @@ return [
     ],
 
     // สไลด์ใหญ่ด้านบน: accent = สีปุ่ม/เส้นของสไลด์นั้น
+    // ลำดับในรายการนี้ = ลำดับสไลด์บนเว็บ (ไม่ได้เรียงตามเวลาให้อัตโนมัติ)
     'slides' => [
-        [
-            'title' => ['en' => 'Phraya Nakhon Cave', 'th' => 'ถ้ำพระยานคร'],
-            'start' => '09:30', 'end' => '11:30',
-            'desc'  => [
-                'en' => 'Late morning sun falls through a gap in the cave roof and lights up the pavilion built for King Rama V.',
-                'th' => 'แสงแดดลอดช่องเพดานถ้ำส่องลงมาที่พระที่นั่งคูหาคฤหาสน์ ภาพที่กลายเป็นสัญลักษณ์ของประจวบคีรีขันธ์',
-            ],
-            'image'  => 'unsplash:cIOxQvbLWfw',
-            'accent' => '#D9A65B', 'bg_top' => '#C99B55', 'bg_bottom' => '#2C5A3B',
-            'link'   => '#stop-phraya-nakhon',
-        ],
-        [
-            'title' => ['en' => 'Sam Roi Yot Lotus Marsh', 'th' => 'ทุ่งสามร้อยยอด'],
-            'start' => '14:00', 'end' => '16:00',
-            'desc'  => [
-                'en' => 'A local boat takes you through lotus and water lilies on the largest freshwater marsh in Thailand, with limestone cliffs all around.',
-                'th' => 'ล่องเรือพื้นบ้านลัดเลาะดงบัวในบึงน้ำจืดกว้างสุดตา มีเทือกเขาหินปูนตั้งตระหง่านเป็นฉากหลัง',
-            ],
-            'image'  => 'unsplash:MpQkpyQ3sPE',
-            'accent' => '#5FAE9C', 'bg_top' => '#3E8F88', 'bg_bottom' => '#1D4A73',
-            'link'   => '#stop-wetland',
-        ],
         [
             'title' => ['en' => 'Khao Sam Roi Yot', 'th' => 'เขาสามร้อยยอด'],
             'start' => '09:00', 'end' => '',
@@ -70,30 +49,52 @@ return [
                 'en' => 'Thailand’s first marine national park. The name means three hundred peaks, and once you see the coastline you will understand why.',
                 'th' => 'อุทยานแห่งชาติทางทะเลแห่งแรกของไทย ยอดเขาหินปูนนับร้อยเรียงรายริมอ่าวไทย',
             ],
-            'image'  => 'unsplash:PRo0UDbanlA',
+            'image'  => 'assets/images/khao-sam-roi-yot.jpg',
             'accent' => '#E8915A', 'bg_top' => '#C98F6B', 'bg_bottom' => '#2E3557',
             'link'   => '#program',
+        ],
+        [
+            'title' => ['en' => 'Phraya Nakhon Cave', 'th' => 'ถ้ำพระยานคร'],
+            'start' => '09:30', 'end' => '11:30',
+            'desc'  => [
+                'en' => 'Late morning sun falls through a gap in the cave roof onto Phra Thinang Khuha Kharuehat, the pavilion that appears on the Prachuap Khiri Khan provincial emblem.',
+                'th' => 'แสงแดดลอดช่องเพดานถ้ำส่องลงมาที่พระที่นั่งคูหาคฤหาสน์ ภาพที่กลายเป็นสัญลักษณ์ของประจวบคีรีขันธ์',
+            ],
+            'image'  => 'assets/images/phraya-nakhon-cave.jpg',
+            'accent' => '#D9A65B', 'bg_top' => '#C99B55', 'bg_bottom' => '#2C5A3B',
+            'link'   => '#stop-phraya-nakhon',
         ],
         [
             'title' => ['en' => 'Bang Pu Beach', 'th' => 'หาดบางปู'],
             'start' => '12:00', 'end' => '13:30',
             'desc'  => [
-                'en' => 'A small fishing village and the trailhead for the cave. Lunch is fresh seafood a few steps from the boats.',
-                'th' => 'หมู่บ้านชาวประมงริมทะเล จุดเริ่มทางขึ้นถ้ำพระยานคร และมื้อกลางวันอาหารทะเลสดริมหาด',
+                'en' => 'A small fishing village and the starting point for the trip to the cave. Lunch is fresh seafood a few steps from the boats.',
+                'th' => 'หมู่บ้านชาวประมงริมทะเล จุดเริ่มต้นการเดินทางไปถ้ำพระยานคร และมื้อกลางวันอาหารทะเลสดริมหาด',
             ],
-            'image'  => 'unsplash:uhz70XUMwSo',
+            'image'  => 'assets/images/bang-pu-beach.jpg',
             'accent' => '#4FA6CC', 'bg_top' => '#4E9BC0', 'bg_bottom' => '#1B3A5E',
             'link'   => '#stop-bang-pu',
+        ],
+        [
+            'title' => ['en' => 'Sam Roi Yot Lotus Marsh', 'th' => 'ทุ่งสามร้อยยอด'],
+            'start' => '14:00', 'end' => '16:00',
+            'desc'  => [
+                'en' => 'A local boat takes you through lotus and water lilies on the largest freshwater marsh in Thailand, with limestone cliffs all around.',
+                'th' => 'ล่องเรือพื้นบ้านลัดเลาะดงบัวในพื้นที่ชุ่มน้ำจืดที่ใหญ่ที่สุดของไทย รายล้อมด้วยเทือกเขาหินปูน',
+            ],
+            'image'  => 'assets/images/thung-sam-roi-yot.jpg',
+            'accent' => '#5FAE9C', 'bg_top' => '#3E8F88', 'bg_bottom' => '#1D4A73',
+            'link'   => '#stop-wetland',
         ],
         [
             'title' => 'Eureka Cafe',
             'subtitle' => ['en' => 'Coffee by the sea', 'th' => 'คาเฟ่ริมทะเล'],
             'start' => '16:30', 'end' => '17:30',
             'desc'  => [
-                'en' => 'Iced coffee and something sweet by the water before the drive back to Hua Hin.',
-                'th' => 'แวะพักจิบกาแฟเย็น ๆ กับของหวานในบรรยากาศริมทะเล ก่อนเดินทางกลับหัวหิน',
+                'en' => 'Iced coffee and something sweet by the water before we take you back to your hotel.',
+                'th' => 'แวะพักจิบกาแฟเย็น ๆ กับของหวานในบรรยากาศริมทะเล ก่อนกลับเข้าที่พัก',
             ],
-            'image'  => 'unsplash:NzBEU5fPp2U',
+            'image'  => 'assets/images/eureka-cafe.jpg',
             'accent' => '#E2B04F', 'bg_top' => '#D49A78', 'bg_bottom' => '#2A496E',
             'link'   => '#stop-eureka',
         ],
@@ -125,19 +126,19 @@ return [
                     'start' => '09:30', 'end' => '11:30',
                     'name'  => ['en' => 'Phraya Nakhon Cave', 'th' => 'สำรวจถ้ำพระยานคร'],
                     'desc'  => [
-                        'en' => 'A large limestone cave where parts of the roof have fallen in, so sunlight and trees reach the floor. Inside stands Phra Thinang Khuha Kharuehat, a pavilion with four gables built in the reign of King Rama V. The initials of King Rama V and King Rama VII are carved into the cave wall.',
-                        'th' => 'ถ้ำหินปูนขนาดใหญ่ที่เพดานบางส่วนยุบตัวเป็นช่องให้แสงส่องลงมา ภายในมีพระที่นั่งคูหาคฤหาสน์ ศาลาจัตุรมุขที่สร้างขึ้นในสมัยรัชกาลที่ 5 และมีพระปรมาภิไธยย่อของรัชกาลที่ 5 และรัชกาลที่ 7 จารึกไว้บนผนังถ้ำ',
+                        'en' => 'A large limestone cave where parts of the roof have fallen in, so sunlight and trees reach the floor. Inside stands Phra Thinang Khuha Kharuehat, a four-porticoed pavilion built in 1890 for King Rama V. The initials of King Rama V and King Rama VII are carved into the cave wall.',
+                        'th' => 'ถ้ำหินปูนขนาดใหญ่ที่เพดานบางส่วนยุบตัวเป็นช่องให้แสงส่องลงมา ภายในมีพระที่นั่งคูหาคฤหาสน์ ศาลาจัตุรมุขที่สร้างขึ้นเมื่อ พ.ศ. 2433 สมัยรัชกาลที่ 5 และมีพระปรมาภิไธยย่อของรัชกาลที่ 5 และรัชกาลที่ 7 จารึกไว้บนผนังถ้ำ',
                     ],
-                    'image' => 'unsplash:gb8CqvwWsxk',
+                    'image' => 'assets/images/phraya-nakhon-cave-card.jpg',
                     'tags'  => [
                         'en' => ['Hike', 'History', 'Photo spot'],
                         'th' => ['เดินขึ้นเขา', 'ประวัติศาสตร์', 'จุดถ่ายรูป'],
                     ],
                     'tip' => [
-                        'en' => 'The trail up is about 430 metres and steep in places. Wear proper walking shoes and carry water. The light through the roof is best in the late morning.',
-                        'th' => 'ทางเดินขึ้นถ้ำยาวราว 430 เมตร ค่อนข้างชัน ใส่รองเท้าผ้าใบและพกน้ำไปด้วย แสงลอดถ้ำจะสวยที่สุดช่วงสายก่อนเที่ยง',
+                        'en' => 'From Bang Pu, a short boat ride (or a walk over the headland) takes you to Laem Sala Beach, where the trail starts. The trail up is about 430 metres and steep in places. Wear proper walking shoes, not flip-flops, and carry water. The light through the roof is best from about 10 to 11am on sunny days.',
+                        'th' => 'จากหาดบางปูนั่งเรือสั้น ๆ (หรือเดินข้ามเขา) ไปหาดแหลมศาลา ซึ่งเป็นจุดเริ่มทางขึ้นถ้ำ ทางเดินขึ้นถ้ำยาวราว 430 เมตร ค่อนข้างชัน ใส่รองเท้าผ้าใบ (ไม่ควรใส่รองเท้าแตะ) และพกน้ำไปด้วย แสงลอดถ้ำจะสวยที่สุดราว 10:00–11:00 น. ในวันที่แดดดี',
                     ],
-                    'transit' => ['en' => 'Walk back down to Bang Pu Beach', 'th' => 'เดินลงเขากลับมาที่หาดบางปู'],
+                    'transit' => ['en' => 'Walk down to Laem Sala Beach and return to Bang Pu', 'th' => 'เดินลงเขาไปหาดแหลมศาลา แล้วกลับมาที่หาดบางปู'],
                 ],
                 [
                     'id'    => 'bang-pu',
@@ -147,9 +148,9 @@ return [
                         'en' => 'Bang Pu is a small fishing village and the main starting point for the cave. Lunch is fresh seafood with the fishing boats and limestone hills in view.',
                         'th' => 'หมู่บ้านชาวประมงเล็ก ๆ ริมทะเล จุดเริ่มต้นหลักของการเดินทางไปถ้ำพระยานคร ทานอาหารทะเลสดพร้อมวิวเรือประมงและภูเขาหินปูน',
                     ],
-                    'image' => 'unsplash:uhz70XUMwSo',
+                    'image' => 'assets/images/bang-pu-beach-card.jpg',
                     'tags'  => [
-                        'en' => ['Seafood', 'Beach'],
+                        'en' => ['Seafood', 'Beach', 'Relax'],
                         'th' => ['อาหารทะเล', 'ริมหาด', 'พักผ่อน'],
                     ],
                     'tip' => [
@@ -166,7 +167,7 @@ return [
                         'en' => 'This is the largest freshwater marsh in Thailand. A local boat moves slowly across still water, through lotus and water lilies, with limestone ridges behind. Watch for waterbirds on the way.',
                         'th' => 'พื้นที่ชุ่มน้ำจืดที่ใหญ่ที่สุดของประเทศไทย ล่องเรือพื้นบ้านไปตามผืนน้ำนิ่ง ผ่านดงบัวหลวงและบัวสาย มีเทือกเขาหินปูนเป็นฉากหลัง และมีนกน้ำให้ชมตลอดทาง',
                     ],
-                    'image' => 'unsplash:JbZqJG_N0bQ',
+                    'image' => 'assets/images/thung-sam-roi-yot-card.jpg',
                     'tags'  => [
                         'en' => ['Boat trip', 'Lotus marsh', 'Birdwatching'],
                         'th' => ['ล่องเรือ', 'บึงบัว', 'ดูนก'],
@@ -186,7 +187,7 @@ return [
                         'en' => 'A break after a full day out. Cold drinks and dessert, with the sea right in front of you.',
                         'th' => 'แวะพักผ่อนหลังเที่ยวมาทั้งวัน จิบเครื่องดื่มเย็น ๆ และของหวานในบรรยากาศสบาย ๆ ริมทะเล',
                     ],
-                    'image' => 'unsplash:NzBEU5fPp2U',
+                    'image' => 'assets/images/eureka-cafe-card.jpg',
                     'tags'  => [
                         'en' => ['Cafe', 'Dessert', 'Sea view'],
                         'th' => ['คาเฟ่', 'ของหวาน', 'วิวทะเล'],
@@ -216,9 +217,9 @@ return [
         ],
         'button_label' => ['en' => 'Contact us', 'th' => 'ติดต่อเรา'],
         'button_link'  => 'mailto:hello@example.com',
-        'image' => 'unsplash:PRo0UDbanlA', // ภาพพื้นหลังส่วนติดต่อ
+        'image' => 'assets/images/contact-bg.jpg', // ภาพพื้นหลังส่วนติดต่อ
     ],
 
     // เครดิตรูปภาพ (Unsplash License) แก้ตามรูปที่ใช้จริง
-    'credits' => ['Tomáš Malík', 'allPhoto Bangkok', 'Jim Thirion', 'Piya Kirdpanya'],
+    'credits' => ['Tomáš Malík', 'allPhoto Bangkok', 'Jim Thirion', 'Piya Kirdpanya', 'Diary s สีเขียว', 'thailandtourismdirectory', 'Toey_Tanayut'],
 ];

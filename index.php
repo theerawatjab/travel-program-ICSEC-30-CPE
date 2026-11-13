@@ -31,6 +31,8 @@ $secondary = function (array $item, string $nameKey, string $subKey): array {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= e(t($trip['title'])) ?> | <?= e($trip['brand']) ?></title>
     <meta name="description" content="<?= e(t($trip['tagline'])) ?>">
+    <link rel="icon" type="image/png" href="assets/images/travel.png">
+    <link rel="apple-touch-icon" href="assets/images/travel.png">
     <link rel="alternate" hreflang="en" href="?lang=en">
     <link rel="alternate" hreflang="th" href="?lang=th">
     <link rel="preconnect" href="https://fonts.googleapis.com">
